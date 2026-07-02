@@ -1,35 +1,27 @@
-import React from 'react';
+import React from "react";
+import "./App.css";
 
 function App() {
-  // An array of project data to keep the rendering clean and dynamic
-  const dreamProjects = [
+  const projects = [
     {
-      id: 1,
-      name: "AI Study Companion",
-      description: "An interactive AI-powered app that breaks down complex coding concepts into simple, personalized summaries."
+      name: "AI Leaf Disease Detection",
+      description: "An AI project that detects plant leaf diseases using image processing."
     },
     {
-      id: 2,
-      name: "Eco-Tracker",
-      description: "A mobile application designed to track personal daily carbon footprints and suggest sustainable alternatives."
+      name: "Online Voting System",
+      description: "A secure web application for conducting online elections."
     },
     {
-      id: 3,
-      name: "Decentralized Portfolio",
-      description: "A web platform that leverages blockchain tech to securely showcase and verify developer credentials and open-source contributions."
+      name: "Smart Attendance System",
+      description: "A facial recognition based attendance management system."
     }
   ];
 
   return (
     <div className="ns-wrapper">
-      {dreamProjects.map((project) => (
-        <div key={project.id} style={{ margin: '20px 0', borderBottom: '1px solid #eee', paddingBottom: '10px' }}>
-          {/* Project Name with mandatory data attribute */}
-          <h1 data-ns-test="project-name">
-            {project.name}
-          </h1>
-          
-          {/* Project Description with mandatory data attribute */}
+      {projects.map((project, index) => (
+        <div key={index}>
+          <h1 data-ns-test="project-name">{project.name}</h1>
           <h6 data-ns-test="project-description">
             {project.description}
           </h6>
