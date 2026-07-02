@@ -1,0 +1,16 @@
+.ns-wrapper {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #1e3a8a;
+  margin-bottom: 5px;
+}
+
+h6 {
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
